@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, p {
+    font-family: 'Comfortaa', cursive;
+}
+
 a, li {
     list-style: none;
     color: #000;
@@ -35,12 +39,13 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 10vh 90vh 200vh 100vh;
+    grid-template-areas: "a" "b" "c" "d";
 }
 
 header {
     width: 100%;
-    background-color: #e95356;
     background-color: #ea5d28;
     height: 10vh;
     display: flex;
@@ -77,14 +82,17 @@ header .logo a {
     position: absolute;
     left: 0%;
     z-index: -1;
+    margin-top: -90vh;
     background-image: url("../images/nav-background2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0;
 }
 
 .nav-bar.hide {
     animation: hideNav .6s normal forwards;
+    opacity: 0;
 }
 
 .nav-bar.show {
@@ -130,9 +138,12 @@ header .logo a {
     justify-content: center;
     align-items: flex-end;
     border-radius: 15%;
-    transform: translateY(-24px);
     cursor: pointer;
     transition: all 0.6s;
+    position: fixed;
+    top: -20px;
+    z-index: 10;
+    justify-self: center;
 }
 
 .book a {
@@ -199,5 +210,94 @@ header .logo a {
 
 .home {
     width: 100%;
-    height: 86vh;
+    height: 90vh;
+    grid-area: b;
+    padding: 0% 2% 0% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home h1 {
+    color: #e95356;
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+.home p {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.home .rot {
+    width: 200px;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rot p {
+    font-size: 20px;
+    color: #e95356;
+    margin: 0;
+}
+
+.home img {
+    width: 100%;
+}
+
+.explore {
+    grid-area: c;
+    padding: 0% 2%;
+    text-align: center;
+}
+
+.line-holder {
+    width: 100%;
+    height: 8vh;
+}
+
+.line-space {
+    width: 100%;
+    height: 15px;
+    margin-top: 1vh;
+    background-image: url("../images/stamp.png");
+    background-position: center;
+}
+
+#delivery,
+#menu,
+#find {
+    width: 100%;
+    height: 60vh;
+    padding: 2%;
+}
+
+.explore .img {
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#delivery .img {
+    background-image: url("../images/delivery.jpg");
+}
+
+#menu .img {
+    background-image: url("../images/menus.jpg");
+}
+
+#find .img {
+    background-image: url("../images/place.jpg");
+}
+
+.explore h1 {
+    margin-top: 8px;
+    font-size: 38px;
 }

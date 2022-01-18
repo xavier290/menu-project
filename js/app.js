@@ -85,9 +85,20 @@ const navBtn = document.querySelector(".menu-btn")
 const book = document.querySelector(".book")
 const navBar = document.querySelector(".nav-bar")
 
+let navOpen = false
+
 navBtn.addEventListener("click", () => {
+    if(!navOpen) {
+        navBar.classList.remove("hide")
+        navBar.classList.add("show")
+        navOpen = true
+    } 
+    else {
+        navBar.classList.remove("show")
+        navBar.classList.add("hide")
+        navOpen = false
+    }
+    
     navBtn.classList.toggle("open")
     book.classList.toggle("hide")
-    navBar.classList.toggle("show")
-    navBar.classList.toggle("hide")
 })
