@@ -31,8 +31,7 @@ body::-webkit-scrollbar-track {
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: #84deff8c;
-    border-radius: 6px;
+    background-color: #252525;
 }
 
 .container {
@@ -40,8 +39,8 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
     position: relative;
     display: grid;
-    grid-template-rows: 10vh 90vh 200vh 100vh;
-    grid-template-areas: "a" "b" "c" "d";
+    grid-template-rows: 10vh 90vh 200vh 60vh 140vh;
+    grid-template-areas: "a" "b" "c" "d" "e";
 }
 
 header {
@@ -300,4 +299,66 @@ header .logo a {
 .explore h1 {
     margin-top: 8px;
     font-size: 38px;
+}
+
+.explore a:hover {
+    color: #e95356;
+}
+
+#contact {
+    width: 100%;
+    grid-area: d;
+    padding: 0% 2%;
+}
+
+#contact h1 {
+    font-size: 34px;
+}
+
+.contact {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.contact input {
+    font-size: 22px;
+    width: 70%;
+    padding: 2%;
+    height: 44px;
+    max-height: 44px;
+    border: solid 2px #000;
+}
+
+.contact button {
+    width: 60px;
+    height: 44px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #e95356;
+    background-color: #000;
+    border: solid 2px #000;
+}
+
+#contact .more div {
+    display: grid;
+    font-size: 18px;
+    align-items: center;
+    grid-template-columns: 20% 80%;
+}
+
+#contact .more img {
+    width: 64px;
+}
+
+#contact .more p {
+    margin-left: 8px;
+}
+
+#contact .line-holder {
+    margin-top: 20px;
+}
+
+footer {
+    grid-area: e;
+    padding: 2%;
 }
