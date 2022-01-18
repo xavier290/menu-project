@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
     position: relative;
     display: grid;
-    grid-template-rows: 10vh 90vh 200vh 60vh 140vh;
+    grid-template-rows: 10vh 90vh 200vh 60vh 130vh;
     grid-template-areas: "a" "b" "c" "d" "e";
 }
 
@@ -317,7 +317,7 @@ header .logo a {
 
 .contact {
     display: flex;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .contact input {
@@ -343,6 +343,7 @@ header .logo a {
     display: grid;
     font-size: 18px;
     align-items: center;
+    margin-bottom: 12px;
     grid-template-columns: 20% 80%;
 }
 
@@ -360,5 +361,35 @@ header .logo a {
 
 footer {
     grid-area: e;
-    padding: 2%;
+    padding: 0% 2%;
+}
+
+footer div {
+    margin-bottom: 14px;
+}
+
+footer div:last-child {
+    margin-bottom: 0px;
+}
+
+footer div ul {
+    margin-left: 2px;
+}
+
+footer div ul li a {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+}
+
+footer div ul li a:hover {
+    color: #e95356;
+}
+
+.disclaimer p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.disclaimer a {
+    color: #e95356;
 }
