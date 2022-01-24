@@ -1,4 +1,7 @@
 @media all and (min-width: 500px) {
+    .menu-home p {
+        font-size: 42px !important;
+    }
     .explore {
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
@@ -28,10 +31,20 @@
     .explore h1 {
         font-size: 26px;
     }
+    .food-section h1 {
+        font-size: 42px;
+    }
+    
+    .food-section h3 {
+        font-size: 24px;
+    }
+    .food-section .options button {
+        font-size: 16px;
+    }
 }
 
 @media all and (min-width: 700px) {
-    header {
+    .header {
         padding: 0% 6%;
     }
     .nav-bar li:hover {
@@ -68,6 +81,15 @@
     footer {
         padding: 0% 6%;
     }
+    .food-section {
+        padding: 0% 6%;
+    }
+    .food-section .options button {
+        font-size: 18px;
+    }
+    .food-content {
+        column-count: 2;
+    }
 }
 
 @media all and (min-width: 850px) {
@@ -85,6 +107,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .menu-home {
+        grid-template-columns: 60% 40%;
+    }
+    .menu-home .elements {
+        grid-area: area1;
+    }
+    .menu-home p {
+        font-size: 52px !important;
+    }
+    .menu-home img {
+        max-width: none;
     }
     .home h1 {
         font-size: 68px;
@@ -138,23 +172,29 @@
     #delivery, #menu, #find {
         height: 50vh;
     }
+    .food-section .options button {
+        font-size: 24px;
+    }
 }
 
 @media all and (min-width: 1200px) {
-    header, .explore, #contact, footer {
+    .header, .explore, #contact, footer {
      padding: 0% 9%;   
     }
     .nav-bar li:hover {
         transform: scale(1.01);
     }
+    .food-section {
+        padding: 0% 9%;
+    }
 }
 
 @media all and (min-width: 1350px) {
-    header .logo {
+    .header .logo {
         width: 80px;
         height: 80px;
     }
-    header .logo a {
+    .header .logo a {
         font-size: 52px;
     }
     .menu-btn {
@@ -217,17 +257,29 @@
     footer .disclaimer p {
         font-size: 22px;
     }
+    .food-section h1 {
+        font-size: 62px;
+    }
+    .food-section h3 {
+        font-size: 32px;
+    }
+    .food-section p {
+        font-size: 24px;
+    }
+    .food-section .options button {
+        font-size: 36px;
+    }
 }
 
 @media all and (min-height: 1200px) and (min-width: 1750px) {
-    header {
+    .header {
         height: 15vh;
     }
-    header .logo {
+    .header .logo {
         width: 120px;
         height: 120px;
     }
-    header .logo a {
+    .header .logo a {
         font-size: 72px;
     }
     .menu-btn {
@@ -259,6 +311,12 @@
     .home p {
         font-size: 80px;
     }
+    .menu-home p {
+        font-size: 92px !important;
+    }
+    .menu-home h1 {
+        font-size: 142px !important;
+    }
     .home .rot {
         width: 740px;
         height: 120px;
@@ -280,5 +338,17 @@
     }
     footer .disclaimer p {
         font-size: 32px;
+    }
+    .food-section h1 {
+        font-size: 72px;
+    }
+    .food-section h3 {
+        font-size: 42px;
+    }
+    .food-section p {
+        font-size: 34px;
+    }
+    .food-section .options button {
+        font-size: 46px;
     }
 }

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     font-family: 'Comfortaa', cursive;
 }
 
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     display: grid;
 }
 
-header {
+.header {
     width: 100%;
     background-color: #ea5d28;
     height: 10vh;
@@ -57,7 +57,7 @@ header {
     padding: 0% 3%;
 }
 
-header .logo {
+.header .logo {
     width: 50px;
     height: 50px;
     display: flex;
@@ -68,7 +68,7 @@ header .logo {
     background-color: #000;
 }
 
-header .logo a {
+.header .logo a {
     font-family: 'The Nautigal', cursive;
     font-size: 30px;
     color: #fff;
@@ -90,7 +90,6 @@ header .logo a {
 
 .nav-bar.hide {
     animation: hideNav .6s normal forwards;
-    opacity: 0;
 }
 
 .nav-bar.show {
@@ -215,6 +214,22 @@ header .logo a {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.menu-home {
+    padding: 0%;
+}
+
+.menu-home img{
+    max-width: 400px;
+}
+
+.home .elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .home h1 {
@@ -392,4 +407,41 @@ footer div ul li a:hover {
 
 .disclaimer a {
     color: #e95356;
+}
+
+.food-section {
+    width: 100%;
+    min-height: 80vh;
+    background: #f7f3e8;
+    padding: 2%;
+}
+
+.food-section h1 {
+    margin-bottom: 10px;
+}
+
+.food-section h3 {
+    margin-bottom: 4px;
+}
+
+.food-section p {
+    margin-bottom: 10px;
+}
+
+.food-section .options button {
+    width: 16.6%;
+    background: transparent;
+    color: #e95356;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 0%;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+    margin-bottom: 10px;
+}
+
+.food-section .options button:hover {
+    background: #000;
 }
