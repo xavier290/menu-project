@@ -36,11 +36,10 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    margin-top: 10vh;
+    min-height: 90vh;
     position: relative;
     display: grid;
-    grid-template-rows: 10vh 90vh 200vh 60vh 130vh;
-    grid-template-areas: "a" "b" "c" "d" "e";
 }
 
 header {
@@ -209,8 +208,7 @@ header .logo a {
 
 .home {
     width: 100%;
-    height: 90vh;
-    grid-area: b;
+    height: 100vh;
     padding: 0% 2% 0% 2%;
     display: flex;
     flex-direction: column;
@@ -250,7 +248,8 @@ header .logo a {
 }
 
 .explore {
-    grid-area: c;
+    width: 100%;
+    height: fit-content;
     padding: 0% 2%;
     text-align: center;
 }
@@ -307,7 +306,7 @@ header .logo a {
 
 #contact {
     width: 100%;
-    grid-area: d;
+    height: fit-content;
     padding: 0% 2%;
 }
 
@@ -360,7 +359,8 @@ header .logo a {
 }
 
 footer {
-    grid-area: e;
+    width: 100%;
+    height: fit-content;
     padding: 0% 2%;
 }
 

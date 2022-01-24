@@ -1,0 +1,284 @@
+@media all and (min-width: 500px) {
+    .explore {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: "area1 area1 area1" "area2 area3 area4" "area5 area5 area5";
+    }
+    .one {
+        grid-area: area1;
+    }
+    .two {
+        grid-area: area5;
+    }
+    #delivery, #menu, #find {
+        height: 30vh;
+        margin-top: 20px;
+        padding: 2% 8%;
+    }
+    #delivery {
+        grid-area: area2;
+    }
+    #menu {
+        grid-area: area3;
+    }
+    #find {
+        grid-area: area4;
+    }
+    .explore h1 {
+        font-size: 26px;
+    }
+}
+
+@media all and (min-width: 700px) {
+    header {
+        padding: 0% 6%;
+    }
+    .nav-bar li:hover {
+        transform: scale(1.04);
+    }
+    .home {
+        padding: 0% 6%;
+    }
+    .home img {
+        width: 80%;
+    }
+    .explore {
+        padding: 0% 6%;
+    }
+    #delivery, #menu, #find {
+        height: 40vh;
+    }
+    #contact {
+        padding: 0% 6%;
+    }
+    #contact .more div {
+        grid-template-columns: 10% 90%;
+    }
+    .contact {
+        margin: 15px 0;
+    }
+    .contact input {
+        height: 60px;
+        max-height: 60px;
+    }
+    .contact button {
+        height: 60px;
+    }
+    footer {
+        padding: 0% 6%;
+    }
+}
+
+@media all and (min-width: 850px) {
+    .nav-bar li:hover {
+        transform: scale(1.02);
+    }
+    .home {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "area1 area2";
+        padding: 0%;
+    }
+    .home .elements {
+        grid-area: area2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home h1 {
+        font-size: 68px;
+    }
+    .home p {
+        font-size: 38px;
+    }
+    .home .rot {
+        width: 360px;
+        height: 60px;
+    }
+    .home img {
+        width: 100%;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: "area1 area1" "area2 area3";
+        margin: 25px 0px;
+    }
+    #contact h1 {
+        grid-area: area1;
+    }
+    #contact .more {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    #contact .more div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0% !important;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 72% 28%;
+        grid-template-areas: "area1 area2 area3 area4 area5" "area6 area6 area6 area6 area6";
+    }
+    footer div {
+        margin-bottom: 25px;
+    }
+    footer .disclaimer {
+        grid-area: area6;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    #delivery, #menu, #find {
+        height: 50vh;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    header, .explore, #contact, footer {
+     padding: 0% 9%;   
+    }
+    .nav-bar li:hover {
+        transform: scale(1.01);
+    }
+}
+
+@media all and (min-width: 1350px) {
+    header .logo {
+        width: 80px;
+        height: 80px;
+    }
+    header .logo a {
+        font-size: 52px;
+    }
+    .menu-btn {
+        width: 65px;
+        height: 40px;
+    }
+    .menu-btn__burger,
+    .menu-btn__burger::after,
+    .menu-btn__burger::before {
+        width: 65px;
+        height: 10px;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-15px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(15px);
+    }
+    .book {
+        width: 260px;
+        height: 60px;
+    }
+    .book a {
+        font-size: 32px;
+    }
+    .explore h1 {
+        font-size: 38px;
+    }
+    #contact {
+        grid-template-rows: 30% 70%;
+    }
+    #contact h1 {
+        font-size: 42px;
+    }
+    #contact p {
+        font-size: 22px;
+    }
+    .contact input {
+        height: 80px;
+        max-height: 80px;
+        font-size: 40px;
+    }
+    .contact button {
+        height: 80px;
+        width: 80px;
+        font-size: 40px;
+    }
+    #contact .more img {
+        width: 78px;
+    }
+    footer {
+        margin-top: 10px;
+    }
+    footer h2 {
+        font-size: 32px;
+    }
+    footer a {
+        font-size: 22px !important;
+    }
+    footer .disclaimer p {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-height: 1200px) and (min-width: 1750px) {
+    header {
+        height: 15vh;
+    }
+    header .logo {
+        width: 120px;
+        height: 120px;
+    }
+    header .logo a {
+        font-size: 72px;
+    }
+    .menu-btn {
+        width: 105px;
+        height: 60px;
+    }
+    .menu-btn__burger,
+    .menu-btn__burger::after,
+    .menu-btn__burger::before {
+        width: 105px;
+        height: 14px;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-20px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(20px);
+    }
+    .book {
+        width: 320px;
+        height: 80px;
+    }
+    .book a {
+        font-size: 42px;
+    }
+    .home h1 {
+        font-size: 122px;
+    }
+    .home p {
+        font-size: 80px;
+    }
+    .home .rot {
+        width: 740px;
+        height: 120px;
+    }
+    .explore h1 {
+        font-size: 52px;
+    }
+    #contact h1 {
+        font-size: 52px;
+    }
+    #contact .more p {
+        font-size: 38px;
+    }
+    footer h2 {
+        font-size: 46px;
+    }
+    footer a {
+        font-size: 32px !important;
+    }
+    footer .disclaimer p {
+        font-size: 32px;
+    }
+}
